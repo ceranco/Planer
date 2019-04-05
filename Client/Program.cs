@@ -19,6 +19,7 @@ namespace Client
                     Console.WriteLine(message);
                 });
                 glfw.GetProcAddress("");
+
             }
         }
     }

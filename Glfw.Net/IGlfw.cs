@@ -6,7 +6,7 @@ using System.Text;
 namespace GlfwDotNet
 {
     /// <summary>
-    /// This is the function signature for error callback functions.
+    /// Function signature for error callback functions.
     /// </summary>
     /// <param name="error">An error code.</param>
     /// <param name="description">A UTF-8 encoded string describing the error.</param>
@@ -14,7 +14,7 @@ namespace GlfwDotNet
 
 
     [NativeSymbols(Prefix = "glfw", SymbolTransformationMethod = SymbolTransformationMethod.Camelize)]
-    public partial interface IGlfw
+    public partial interface IGlfw : IDisposable
     {
         /// <summary>
         /// Initializes the GLFW library.

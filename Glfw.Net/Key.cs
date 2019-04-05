@@ -5,6 +5,7 @@
     /// </summary>
     public enum Key : int
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         Unknown = -1,
         Space = 32,
         Apostrophe = 39,
@@ -127,5 +128,6 @@
         RightSuper = 347,
         Menu = 348,
         Last = Menu,
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

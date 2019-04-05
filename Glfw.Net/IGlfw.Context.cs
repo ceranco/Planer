@@ -13,7 +13,10 @@ namespace GlfwDotNet
     /// </summary>
     public delegate void glProc();
 
-    public partial interface IGlfw : IDisposable
+    /// <summary>
+    /// The interface of the GLFW library.
+    /// </summary>
+    public partial interface IGlfw
     {
         /// <summary>
         /// <para>
