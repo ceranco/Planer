@@ -14,7 +14,11 @@ namespace Client
 
             using (var glfw = NativeLibraryBuilder.Default.ActivateInterface<IGlfw>(library))
             {
-                var a = glfw.ExtensionSupported("S");
+                glfw.SetErrorCallback((error, message) =>
+                {
+                    Console.WriteLine(message);
+                });
+                glfw.GetProcAddress("");
             }
         }
     }

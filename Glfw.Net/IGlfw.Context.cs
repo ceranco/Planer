@@ -13,7 +13,6 @@ namespace GlfwDotNet
     /// </summary>
     public delegate void glProc();
 
-    [NativeSymbols(Prefix = "glfw", SymbolTransformationMethod = SymbolTransformationMethod.Camelize)]
     public partial interface IGlfw : IDisposable
     {
         /// <summary>
